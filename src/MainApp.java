@@ -15,25 +15,11 @@ public class MainApp {
 
         area.frequency.locateFrequency();
 
-        area.setArea(0,0);
-        area.setArea(1,1);
-        area.setArea(2,2);
-        area.setArea(3,3);
-        area.setArea(4,4);
-        area.setArea(5,5);
-        area.setArea(6,4);
-        area.setArea(7,3);
-        area.setArea(8,2);
-        area.setArea(9,1);
-        area.setArea(10,0);
-        area.setArea(11,1);
-        area.setArea(12,2);
-        area.setArea(13,3);
-        area.setArea(14,4);
-        area.setArea(15,5);
-        area.setArea(16,4);
-        area.setArea(17,3);
-        area.setArea(18,2);
+        int [] latList = {0,1,2,3,4,5,4,3,2,1,0,1,2,3,4,5,4,3,2};
+
+        for (int j=0; j<longitude; j++){
+            area.setArea(j,latList[j]);
+        }
 
         area.printArea();
 
