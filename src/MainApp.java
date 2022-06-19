@@ -4,31 +4,14 @@ public class MainApp {
 
         int longitude = 19;
         int latitude = 19;
-        int cells = 19;
+        String [] cells = {"A", "B", "C", "D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S" };
 
-        Area area = new Area(longitude,latitude, cells);
-
+        Area area = new Area(longitude,latitude, cells.length);
         area.frequency.generateFrequencies();
 
-        area.frequency.addCell("A");
-        area.frequency.addCell("B");
-        area.frequency.addCell("C");
-        area.frequency.addCell("D");
-        area.frequency.addCell("E");
-        area.frequency.addCell("F");
-        area.frequency.addCell("G");
-        area.frequency.addCell("H");
-        area.frequency.addCell("I");
-        area.frequency.addCell("J");
-        area.frequency.addCell("K");
-        area.frequency.addCell("L");
-        area.frequency.addCell("M");
-        area.frequency.addCell("N");
-        area.frequency.addCell("O");
-        area.frequency.addCell("P");
-        area.frequency.addCell("Q");
-        area.frequency.addCell("R");
-        area.frequency.addCell("S");
+        for (String cell : cells) {
+            area.frequency.addCell(cell);
+        }
 
         area.frequency.locateFrequency();
 
