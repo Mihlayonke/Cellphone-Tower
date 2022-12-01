@@ -100,5 +100,7 @@ public class Main {
         else {
             System.out.print("---ERROR!... There is shortage number of cells for latitude locations, add another cell for an extra location !!!---");
         }
+
+        scanner.close();
     }
 }
